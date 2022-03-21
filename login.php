@@ -28,7 +28,7 @@ session_start();
       <?php else: ?>
 
       <div> Hai già eseguito il login <?php echo $_SESSION["email"]; ?></div>
-
+      <p>Ritorna all'index<a href="./index.php" />qui</a></p>
       <?php endif ?>
       
     </body>

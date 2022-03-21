@@ -7,6 +7,7 @@ $_SESSION["classe"] = $_POST["classe"];
 $_SESSION["email"] = $_POST["email"];
 $_SESSION["password"] = $_POST["password"];
 $_SESSION["data"] = $_POST["data"];
+$_SESSION["logged"] = true;
 
 header("location: /utente.php");
 ?>
