@@ -23,5 +23,6 @@ if(isset($_SESSION["logged"]) && $_SESSION["logged"]==true){
 
 <html>
   <p>clicca qui per registrarti <a href="./register.php" />registrati</a></p>
+  <p>Per comprare libri <a href="./dashboard.php" />clicca qui.</a></p>
   <p>clicca qui per tornare alla <a href="./index.php" />home</a></p>
 </html>
