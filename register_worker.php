@@ -13,7 +13,7 @@ $_SESSION["registed"] = true;
 
 $_SESSION["nome"] = "mario";
 $_SESSION["cognome"] = "rossi";
-$_SESSION["classe"] = "4ina"
+$_SESSION["classe"] = "4ina";
 $_SESSION["email"] = "mario.rossi@mail.com";
 $_SESSION["password"] = "sium";
 $_SESSION["data"] = "21/03/2022";
