@@ -1,6 +1,6 @@
 <?php
 
-session_write_close();
+session_unset();
 
 header("location: /index.php");
 
