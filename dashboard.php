@@ -15,6 +15,6 @@ session_start();
       <input type="text" id="libro" placeholder="" name="libro">
       <button type="submit" name="libro">Cerca</button>
       <p>clicca qui per tornare alla <a href="./index.php" />home</a></p>
-      <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.izzyweb.it%2Fimmagini-divertenti-e-buffe-scaricate-dalla-rete%2F&psig=AOvVaw0Q1mBQQ1MSxd_QZFINByFE&ust=1647949017634000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCMiRjdKO1_YCFQAAAAAdAAAAABBC">
+      <img src=https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.izzyweb.it%2Fimmagini-divertenti-e-buffe-scaricate-dalla-rete%2F&psig=AOvVaw0Q1mBQQ1MSxd_QZFINByFE&ust=1647949017634000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCMiRjdKO1_YCFQAAAAAdAAAAABBC>
     </body>
   </html>
