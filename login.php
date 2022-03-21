@@ -11,7 +11,6 @@ session_start();
 
 ?>
 
-
 <html>
     <head>
       <title>Login</title>
