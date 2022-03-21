@@ -24,10 +24,15 @@ session_start();
             <button type="submit" name="login">Accedi</button>
         </form>
         <p>Se non sei ancora registrato, clicca <a href="./register.php" />qui</a> per farlo </p>
-      <?php elseif(!isset($_SESSION["logged"]))
+      <?php if(!isset($_SESSION["logged"])){
+      echo("<div> Non sei registrato, clicca <a href=''./register.php' />qui</a> per registrarti</div>");
+      }else{
+  echo("<p>clicca qui per tornare alla <a href='./index.php' />home</a></p>");
+      }
+
   ?>
-      <div> Non sei registrato, clicca <a href="./register.php" />qui</a> per registrarti</div>
-      <p>clicca qui per tornare alla <a href="./index.php" />home</a></p>
-      <?php endif ?>
+      
+      
+     
     </body>
 </html>
