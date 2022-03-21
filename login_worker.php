@@ -2,9 +2,12 @@
 // Start the session
 session_start();
 
-$_SESSION["email"] = htmlentities($_POST["email"]);
-$_SESSION["password"] = htmlentities($_POST["password"]);
-$_SESSION["logged"] = true;
+if(isset($_SESSION["logged"])){
+  $_SESSION["email"] = htmlentities($_POST["email"]);
+  $_SESSION["password"] = htmlentities($_POST["password"]);
+}else{
+  
+}
 
 ?>
 

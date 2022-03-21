@@ -1,5 +1,6 @@
 <html>
   <title>DATI UTENTI</title>
+  <h1>DATI UTENTE</h1>
 </html>
 <?php
 //inizio sessione
