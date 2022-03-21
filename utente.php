@@ -1,4 +1,5 @@
 <?php
+//
 session_start();
     echo "Welcome: " .$_SESSION["email"]."</br>";
     echo "Questi sono i tuoi dati:"."</br>";

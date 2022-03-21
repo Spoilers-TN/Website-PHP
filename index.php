@@ -1,5 +1,5 @@
 <?php
-beta-dev.spoilers.tn.it/index.php
+//beta-dev.spoilers.tn.it/index.php
 // Start the session
 session_start();
 ?>
