@@ -19,7 +19,7 @@ $_SESSION["password"] = "sium";
 $_SESSION["data"] = "21/03/2022";
 $_SESSION["logged"] = true;
 
-header("location: /utente.php");
+header("location: /dashboard.php");
 ?>
 
 
