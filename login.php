@@ -25,6 +25,7 @@ session_start();
         </form>
         <p>Se non sei ancora registrato, clicca <a href="./register.php" />qui</a> per farlo </p>
       <?php elseif(!isset($_SESSION["logged"]))
+  ?>
       <div> Non sei registrato, clicca <a href="./register.php" />qui</a> per registrarti</div>
       <p>clicca qui per tornare alla <a href="./index.php" />home</a></p>
       <?php endif ?>
