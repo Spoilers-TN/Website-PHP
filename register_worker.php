@@ -18,7 +18,6 @@ $_SESSION["email"] = "mario.rossi@mail.com";
 $_SESSION["password"] = "sium";
 $_SESSION["data"] = "21/03/2022";
 $_SESSION["logged"] = true;
-$_SESSION["registed"] = true;
 
 header("location: /utente.php");
 ?>
