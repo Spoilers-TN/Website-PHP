@@ -10,7 +10,7 @@ session_start();
     </head>
     <body>
       <h1>LIBRAIMOVIC</h1>
-      <h3>created by 4INA</h3>
+      <h3>Created by 4INA</h3>
       <p>Ciao! Siamo la 4ina e abbiamo redatto questo sito per la <strong>compra-vendita</strong> dei libri scolastici. </p>
       <p>clicca qui per il <a href="./login.php" />login</a></p>
         <p>clicca qui per la <a href="./register.php" />registrazione</a></p>
