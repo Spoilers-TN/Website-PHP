@@ -11,5 +11,5 @@ session_start();
 ?>
 
 <html>
-  <p>clicca qui per tornare alla home <a href="./index.php" />home</a></p>
+  <p>clicca qui per tornare alla <a href="./index.php" />home</a></p>
 </html>

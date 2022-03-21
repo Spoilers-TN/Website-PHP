@@ -30,6 +30,5 @@ session_start();
       <div> Hai già eseguito il login <?php echo $_SESSION["email"]; ?></div>
       <p>clicca qui per tornare alla <a href="./index.php" />home</a></p>
       <?php endif ?>
-      
     </body>
 </html>
