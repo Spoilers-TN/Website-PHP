@@ -14,7 +14,7 @@ $_SESSION["logged"] = true;
 Welcome <?php echo $_POST["email"]; ?><br>
 Your email address is: <?php echo $_POST["email"]; ?>
 
-<p>clicca qui per tornare al <a href="./login.php" />login</a></p>
+<p>clicca qui per tornare alla <a href="./index.php" />home</a></p>
   
 </body>
 </html>
