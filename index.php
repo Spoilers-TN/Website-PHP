@@ -16,5 +16,8 @@ session_start();
         <p>clicca qui per la <a href="./register.php" />registrazione</a></p>
       <p>Per accedere al nostro sito Web <a href="https://www.spoilers.tn.it" target="_blank" />clicca qui.        </a></p>
       <p>clicca qui per chiudere la <a href="./close_session.php" />sessione</a></p>
+      <?php if(isset($_SESSION["name"])) : ?>
+      <p>Sei in una sessione</p>
+      <? endif; ?>
     </body>
   </html>
