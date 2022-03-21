@@ -3,6 +3,6 @@
 session_start();
 session_destroy();
 
-header("location: /index.php?llogout");
+header("location: /index.php?logout=ok");
 
 ?>
