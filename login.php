@@ -9,9 +9,6 @@ session_start();
 
 //echo "email" .$_SESSION["email"];
 
-
-
-
 ?>
 
 
@@ -21,7 +18,6 @@ session_start();
     </head>
     <body>
       <?php if(!isset($_SESSION["email"])): ?>
-        
         <form method="post" action="./login_worker.php">
             <h1>Login</h1>
             <input type="text" id="email" placeholder="Email" name="email">
