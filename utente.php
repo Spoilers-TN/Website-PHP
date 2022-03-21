@@ -1,7 +1,7 @@
 <?php
 //inizio sessione
 session_start();
-    echo "Welcome: " .$_SESSION["nome"].$_SESSION["cognome"]."</br>";
+    echo "Welcome: " .$_SESSION["nome"]." ".$_SESSION["cognome"]."</br>";
     echo "Questi sono i tuoi dati:"."</br>";
     echo "Nome: " .$_SESSION["nome"]."</br>";
     echo "Cognome: ".$_SESSION["cognome"]."</br>";
