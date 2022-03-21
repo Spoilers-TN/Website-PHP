@@ -18,7 +18,7 @@ error_reporting(E_ALL);
       <title>Login</title>
     </head>
     <body>
-      <?php if(session_status() == PHP_SESSION_DISABLED): ?>
+      <?php if(isset($_SESSION["email"])): ?>
         
         <form method="post" action="./login_worker.php">
             <h1>Login</h1>
