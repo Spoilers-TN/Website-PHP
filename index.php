@@ -20,7 +20,7 @@ session_start();
       <?php if(isset($_SESSION["logged"])){
         echo("<p>Sei in una sessione</p>");
       }else{
-   echo("<p>non sei in una sessione</p>");
+        echo("<p>non sei in una sessione</p>");
       }
        
       ?>
