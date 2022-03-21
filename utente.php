@@ -6,6 +6,6 @@ session_start();
     echo "Nome: " .$_SESSION["nome"]."</br>";
     echo "Cognome: ".$_SESSION["cognome"]."</br>";
     echo "Classe: ".$_SESSION["classe"]."</br>";
-    echo "Data di nascita: ".$_SESSION["data di nascita"]."</br>";
+    echo "Data di nascita: ".$_SESSION["data"]."</br>";
 ?>
 
