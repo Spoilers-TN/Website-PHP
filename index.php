@@ -18,6 +18,6 @@ session_start();
       <p>clicca qui per chiudere la <a href="./close_session.php" />sessione</a></p>
       <?php if(isset($_SESSION["name"])) : ?>
       <p>Sei in una sessione</p>
-      <? endif; ?>
+      <? endif ?>
     </body>
   </html>
