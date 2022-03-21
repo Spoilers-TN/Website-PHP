@@ -16,7 +16,7 @@ session_start();
       <title>Login</title>
     </head>
     <body>
-      <?php if(!isset($_SESSION["logged"])): ?>
+      <?php if(isset($_SESSION["registed"])): ?>
         <form method="post" action="./login_worker.php">
             <h1>Login</h1>
             <input type="text" id="email" placeholder="Email" name="email">
@@ -24,10 +24,10 @@ session_start();
             <button type="submit" name="login">Accedi</button>
         </form>
         <p>Se non sei ancora registrato, clicca <a href="./register.php" />qui</a> per farlo </p>
-
+      <?php elseif(isset(!is))
       <?php else: ?>
 
-      <div> Hai già eseguito il login <?php echo $_SESSION["email"]; ?></div>
+      <div> Non sei registrato, clicca <a href="./register.php" />qui</a> per registrarti</div>
       <p>clicca qui per tornare alla <a href="./index.php" />home</a></p>
       <?php endif ?>
     </body>
