@@ -16,7 +16,7 @@ session_start();
       <title>Login</title>
     </head>
     <body>
-      <?php if(isset($_SESSION["registed"])): ?>
+      <?php// if(isset($_SESSION["registed"])): ?>
         <form method="post" action="./login_worker.php">
             <h1>Login</h1>
             <input type="text" id="email" placeholder="Email" name="email">
