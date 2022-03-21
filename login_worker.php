@@ -4,6 +4,7 @@ session_start();
 
 $_SESSION["email"] = htmlentities($_POST["email"]);
 $_SESSION["password"] = htmlentities($_POST["password"]);
+$
 ?>
 
 <html>
