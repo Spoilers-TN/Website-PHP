@@ -16,6 +16,6 @@ if(isset($_SESSION["logged"])){
 
 
 <html>
-  <p>clicca qui per registrarti <a href="./registrer.php" />home</a></p>
+  <p>clicca qui per registrarti <a href="./registrer.php" />registrati</a></p>
   <p>clicca qui per tornare alla <a href="./index.php" />home</a></p>
 </html>
