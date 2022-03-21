@@ -1,5 +1,5 @@
 <?php
-//
+//inizio sessione
 session_start();
     echo "Welcome: " .$_SESSION["email"]."</br>";
     echo "Questi sono i tuoi dati:"."</br>";
@@ -8,3 +8,4 @@ session_start();
     echo "Classe: ".$_SESSION["classe"]."</br>";
     echo "Data di nascita: ".$_SESSION["data"]."</br>";
 ?>
+
