@@ -5,7 +5,7 @@ ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);  
 
 // Start the session
-//session_start();
+session_start();
 
 //echo "email" .$_SESSION["email"];
 
@@ -18,7 +18,7 @@ error_reporting(E_ALL);
       <title>Login</title>
     </head>
     <body>
-      <?php if(isset($_SESSION["email"])): ?>
+      <?php if(!isset($_SESSION["email"])): ?>
         
         <form method="post" action="./login_worker.php">
             <h1>Login</h1>
