@@ -1,6 +1,7 @@
 <?php
 //inizio sessione
 session_start();
+if(isset($_SESSION["logged"])){
     echo "Welcome: ".$_SESSION["nome"].$_SESSION["cognome"]."</br>";
     echo "Questi sono i tuoi dati:"."</br>";
     echo "Nome: " .$_SESSION["nome"]."</br>";
@@ -8,8 +9,13 @@ session_start();
     echo "Classe: ".$_SESSION["classe"]."</br>";
     echo "Email: ".$_SESSION["email"]."</br>";
     echo "Data di nascita: ".$_SESSION["data"]."</br>";
+}else{
+  echo "<p>non sei registrato!!!</p>";
+}
 ?>
 
+
 <html>
+  <p>clicca qui per registrarti <a href="./registrer.php" />home</a></p>
   <p>clicca qui per tornare alla <a href="./index.php" />home</a></p>
 </html>
