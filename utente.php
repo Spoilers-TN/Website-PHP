@@ -9,3 +9,7 @@ session_start();
     echo "Email: ".$_SESSION["email"]."</br>";
     echo "Data di nascita: ".$_SESSION["data"]."</br>";
 ?>
+
+<html>
+  <p>clicca qui per tornare alla home <a href="./index.php" />home</a></p>
+</html>

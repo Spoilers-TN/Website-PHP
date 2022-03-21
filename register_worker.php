@@ -12,6 +12,4 @@ $_SESSION["logged"] = true;
 header("location: /utente.php");
 ?>
 
-<html>
-<p>clicca qui per tornare alla home <a href="./index.php" />home</a></p>
-</html>
+
