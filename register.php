@@ -10,8 +10,8 @@
           <input type="cognome" id="cognome" placeholder="Cognome" name="cognome" required><br>
           <input type="data di nascita" id="data di nascita" placeholder="Data di nascita" name="data di nascita" required><br>
           <input type="classe" id="classe" placeholder="Classe" name="classe" required><br>
-          <input type="text" id="email" placeholder="Email(username)" name="email"><br>
-            <input type="password" id="password" placeholder="password" name="password"><br>
+          <input type="text" id="email" placeholder="Email(username)" name="email" required><br>
+            <input type="password" id="password" placeholder="password" name="password" required><br>
             <button type="submit" name="register">Registrati</button>
         </form>
       <p>clicca qui per il <a href="./login.php" />login</a></p>
