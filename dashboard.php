@@ -9,8 +9,8 @@ session_start();
     </head>
     <body>
       <h1>LIBRAIMOVIC</h1>
-      <h3>Qui puoi cercare i tuoi libri!</h3>
       <p>Per accedere al tuo profilo <a href="./utente.php" />clicca qui.</a></p>
+      <h3>Qui puoi cercare i tuoi libri!</h3>
       <input type="text" id="libro" placeholder="" name="libro">
       <button type="submit" name="libro">Cerca</button>
 
