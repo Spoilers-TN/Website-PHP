@@ -1,5 +1,5 @@
 <div class="col s12 m6 offset-m3 center-align">
-   <a class="oauth-container btn darken-4 white black-text" href="redirect.php" style="text-transform:
+   <a class="oauth-container btn darken-4 white black-text" href='".$client->createAuthUrl()."' style="text-transform:
 none">
        <div class="left">
            <img width="20px" style="margin-top:7px; margin-right:8px" alt="Google sign-in"  
