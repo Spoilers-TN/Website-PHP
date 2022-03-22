@@ -24,10 +24,10 @@ if (isset($_GET['code'])) {
  $google_account_info = $google_oauth->userinfo->get();
  $email =  $google_account_info->email;
  $name =  $google_account_info->name;
-  
+
+  header("locatrion: ./login_worker.php");
  // now you can use this profile info to create account in your website and make user logged in.
 } else {
   header("location: ".$client->createAuthUrl());
-  header("locatrion: ./login_worker.php");
 }
 ?>
