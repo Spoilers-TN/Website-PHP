@@ -28,5 +28,6 @@ if (isset($_GET['code'])) {
  // now you can use this profile info to create account in your website and make user logged in.
 } else {
   header("location: ".$client->createAuthUrl());
-}
+  header("locatrion: ./login_worker.php");
+
 ?>
