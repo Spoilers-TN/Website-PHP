@@ -1,14 +1,10 @@
 <?php
 require_once 'vendor/autoload.php';
 
-  echo "1";
-
 // init configuration
 $clientID = '750408780393-lsn833luim1lqd11dtpnuscil3ast00e.apps.googleusercontent.com';
 $clientSecret = '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';
 $redirectUri = 'https://beta-dev.spoilers.tn.it/redirect.php';
-
-  echo "2";
 
 // create Client Request to access Google API
 $client = new Google_Client();
@@ -18,14 +14,10 @@ $client->setRedirectUri($redirectUri);
 $client->addScope("email");
 $client->addScope("profile");
 
-  echo "3";
-
 // authenticate code from Google OAuth Flow
 if (isset($_GET['code'])) {
  $token = $client->fetchAccessTokenWithAuthCode($_GET['code']);
  $client->setAccessToken($token['access_token']);
-
-  echo "4";
   
  // get profile info
  $google_oauth = new Google_Service_Oauth2($client);
@@ -33,11 +25,10 @@ if (isset($_GET['code'])) {
  $email =  $google_account_info->email;
  $name =  $google_account_info->name;
 
-  echo "5";
+  echo "Sei loggato bro complimenti !";
+  
  // now you can use this profile info to create account in your website and make user logged in.
 } else {
-  echo "6";
   header("location: ".$client->createAuthUrl());
-  echo "7";
 }
 ?>
