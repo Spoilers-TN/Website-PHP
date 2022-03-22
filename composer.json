@@ -1,6 +1,6 @@
 {
-  "name": "spoilers/webplatform"
-  "type" : "project"
+  "name": "spoilers/webplatform",
+  "type" : "project",
   "description" : "Spoilers Web Platform"
   "require": {
     "google/apiclient" : "^2.0"
