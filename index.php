@@ -12,7 +12,7 @@ session_start();
       <h1>LIBRAIMOVIC</h1>
       <h3>Created by 4INA!</h3>
       <p>Ciao! Siamo la 4ina e abbiamo redatto questo sito per la <strong>compra-vendita</strong> dei libri scolastici. </p>
-      <p>Clicca qui per il <a href="./redirect.php" />login</a></p>
+      <p>Clicca qui per il <a href="./login.php" />login</a></p>
         <p>Clicca qui per la <a href="./register.php" />registrazione</a></p>
        <p>Per accedere al tuo profilo <a href="./utente.php" />clicca qui.</a></p>
       <p>Per accedere al nostro sito Web <a href="https://www.spoilers.tn.it" target="_blank" />clicca qui.        </a></p>
