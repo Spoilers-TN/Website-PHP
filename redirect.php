@@ -34,7 +34,7 @@
     if(!isset($_SESSION["logged"])){
       header("location: ".$client->createAuthUrl());
     }else{
-      echo "<p>Per accedere al tuo profilo <a href=\"./index.php\" />clicca qui.</a></p>";
+      echo "<p>Per tornare all'Home <a href=\"./index.php\" />clicca qui.</a></p>";
     }
   }
 
