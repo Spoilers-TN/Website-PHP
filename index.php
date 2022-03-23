@@ -18,7 +18,7 @@
       <p>Ciao! Siamo la 4ina e abbiamo redatto questo sito per la <strong>compra-vendita</strong> dei libri scolastici.</p>
       <p>Clicca qui per il <a href="./login.php" />login</a></p>
       <p>Per accedere al tuo profilo <a href="./utente.php" />clicca qui.</a></p>
-      <p>Per accedere al nostro sito Web <a href="https://www.spoilers.tn.it" target="_blank" />clicca qui.        </a></p>
+      <p>Per accedere al nostro sito Web <a href="https://www.spoilers.tn.it" target="_blank" />clicca qui.</a></p>
       <p>Clicca qui per chiudere la <a href="./close_session.php" />sessione</a></p>
       
       <?php 

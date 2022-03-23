@@ -14,7 +14,7 @@ if(isset($_SESSION["logged"])){
     echo "Cognome: ".$_SESSION["cognome"]."</br>";
     echo "Classe: ".$_SESSION["classe"]."</br>";
     echo "Email: ".$_SESSION["email"]."</br>";
-    echo "Data di nascita: ".$_SESSION["data"]."</br>";
+    echo "Indirizzo: ".$_SESSION["indirizzo"]."</br>";
 }else{
   echo "<p>non sei registrato!!!</p>";
 }

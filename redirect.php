@@ -25,12 +25,15 @@ if (isset($_GET['code'])) {
   $google_account_info = $google_oauth->userinfo->get();
   $_SESSION["email"] =  $google_account_info->email;
   $_SESSION["nome"] =  $google_account_info->name;
-  $_SESSION["cognome"] =  $google_account_info->surname;
+  $_SESSION["cognome"] =  $google_account_info->family_name;
 
   header("location: /register.php");
   
  // now you can use this profile info to create account in your website and make user logged in.
 } else {
+  if(!isset($_SESSION["logged"]){
   header("location: ".$client->createAuthUrl());
+     }else{
+     echo("Sei gia registrato, clicca <a href='./index.php' />qui</a>')
 }
 ?>
