@@ -20,8 +20,7 @@ session_start();
       }else{
         echo("<p>non sei in una sessione!</p>");
       }
-      <p>Clicca qui per chiudere la <a href="./close_session.php" />sessione</a></p>
-       
       ?>
+      <p>Clicca qui per chiudere la <a href="./close_session.php" />sessione</a></p>
     </body>
   </html>
