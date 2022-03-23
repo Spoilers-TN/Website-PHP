@@ -1,7 +1,8 @@
 <?php
-require_once 'vendor/autoload.php';
 
-// init configuration
+session_start();
+
+require_once 'vendor/autoload.php';
 $clientID = '750408780393-lsn833luim1lqd11dtpnuscil3ast00e.apps.googleusercontent.com';
 $clientSecret = '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';
 $redirectUri = 'https://beta-dev.spoilers.tn.it/redirect.php';
@@ -21,7 +22,7 @@ if (isset($_GET['code'])) {
   
  // get profile info
  $google_oauth = new Google_Service_Oauth2($client);
- $google_account_info = $google_oauth->userinfo->get();
+ $_SESSION = $google_oauth->userinfo->get();
  $email =  $google_account_info->email;
  $name =  $google_account_info->name;
 
