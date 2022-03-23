@@ -6,7 +6,7 @@
 //inizio sessione
 session_start();
 
-if(isset($_SESSION["logged"]) && $_SESSION["logged"]==true){
+if(isset($_SESSION["logged"])){
     echo "Welcome: ".$_SESSION["nome"]." ";
     echo  $_SESSION["cognome"]."</br>";
     echo "Questi sono i tuoi dati:"."</br>";
