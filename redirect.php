@@ -34,6 +34,6 @@ if (isset($_GET['code'])) {
   if(!isset($_SESSION["logged"]){
   header("location: ".$client->createAuthUrl());
      }else{
-     echo("Sei gia registrato, clicca <a href='./index.php' />qui</a>')
+     echo("Sei gia registrato, clicca <a href='./index.php' />qui</a> per andare nell'index")
 }
 ?>
