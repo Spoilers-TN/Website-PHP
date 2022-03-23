@@ -17,8 +17,8 @@
   
   // authenticate code from Google OAuth Flow
   if (isset($_GET['code'])) {
-   $token = $client->fetchAccessTokenWithAuthCode($_GET['code']);
-   $client->setAccessToken($token['access_token']);
+    $token = $client->fetchAccessTokenWithAuthCode($_GET['code']);
+    $client->setAccessToken($token['access_token']);
     
    // get profile info
     $google_oauth = new Google_Service_Oauth2($client);
@@ -34,7 +34,8 @@
     if(!isset($_SESSION["logged"])){
       header("location: ".$client->createAuthUrl());
     }else{
-      echo "<p>Clicca qui per andare nell'index <a href=\'./index.php\' /></a></p>";
+      echo "<p>Clicca qui per andare nell'<a href=\'./index.php\' index/></a></p>";
     }
   }
+
 ?>
