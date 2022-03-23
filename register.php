@@ -12,11 +12,7 @@ session_start();
           <h1>Registrazione</h1>
           <input type="classe" id="classe" placeholder="Classe" name="classe" required><br>
           <input type="indirizzo" id="indirizzo" placeholder="Indirizzo" name="indirizzo" required><br>
-          <!--<input type="text" id="email" placeholder="Email(username)" name="email" required><br>
-          <input type="password" id="password" placeholder="password" name="password" required><br>
           <button type="submit" name="register">Registrati</button>
-        </form>
-      <p>clicca qui per il <a href="./login.php" />login</a></p>-->
-          
+        </form>       
     </body>
 </html>
