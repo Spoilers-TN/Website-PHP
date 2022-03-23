@@ -15,7 +15,7 @@ session_start();
       <p>Clicca qui per il <a href="./login.php" />login</a></p>
       <p>Per accedere al nostro sito Web <a href="https://www.spoilers.tn.it" target="_blank" />clicca qui.        </a></p>
       <?php if(isset($_SESSION["logged"])){
-       <p>Per accedere al tuo profilo <a href="./utente.php" />clicca qui.</a></p>
+       echo (<p>Per accedere al tuo profilo <a href="./utente.php" />clicca qui.</a></p>);
         echo("<p>Sei in una sessione!</p>");
       }else{
         echo("<p>non sei in una sessione!</p>");

@@ -21,11 +21,11 @@ if (isset($_GET['code'])) {
  $client->setAccessToken($token['access_token']);
   
  // get profile info
- $google_oauth = new Google_Service_Oauth2($client);
- $google_account_info = $google_oauth->userinfo->get();
- $_SESSION["email"] =  $google_account_info->email;
- $_SESSION["nome"] =  $google_account_info->name;
-   $_SESSION["cognome"] =  $google_account_info->;
+  $google_oauth = new Google_Service_Oauth2($client);
+  $google_account_info = $google_oauth->userinfo->get();
+  $_SESSION["email"] =  $google_account_info->email;
+  $_SESSION["nome"] =  $google_account_info->name;
+  $_SESSION["cognome"] =  $google_account_info->surname;
 
   header("location: /register.php");
   
