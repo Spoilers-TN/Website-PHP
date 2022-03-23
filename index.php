@@ -16,7 +16,16 @@
       <h3>Created by 4INA!</h3>
       
       <p>Ciao! Siamo la 4ina e abbiamo redatto questo sito per la <strong>compra-vendita</strong> dei libri scolastici.</p>
-      <p>Clicca qui per il <a href="./login.php" />login</a></p>
+      <p>Clicca qui per il
+      <?php 
+        if(!isset($_SESSION["logged"])){
+          echo "<a href=\"./login.php\" />login</a></p>";
+        }
+        else{
+          echo "<a href=\"./redirect.php\" />login</a></p>";
+        }
+      ?>
+      </p>
       <p>Per accedere al nostro sito Web <a href="https://www.spoilers.tn.it" target="_blank" />clicca qui.</a></p>
       
       <?php
