@@ -31,9 +31,9 @@ if (isset($_GET['code'])) {
   
  // now you can use this profile info to create account in your website and make user logged in.
 } else {
-  if(!isset($_SESSION["logged"]){
+  if(!isset($_SESSION["logged"])){
   header("location: ".$client->createAuthUrl());
      }else{
-     echo("Sei gia registrato, clicca <a href='./index.php' />qui</a> per andare nell'index")
+     echo("Sei gia registrato, clicca <a href='./index.php' />qui</a> per andare nell'index");1
 }
 ?>
