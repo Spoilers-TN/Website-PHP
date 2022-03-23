@@ -23,8 +23,8 @@ if (isset($_GET['code'])) {
  // get profile info
  $google_oauth = new Google_Service_Oauth2($client);
  $_SESSION = $google_oauth->userinfo->get();
- $email =  $google_account_info->email;
- $name =  $google_account_info->name;
+ $_SESSION["name"] =  $google_account_info->email;
+ $_SESSION[""] =  $google_account_info->name;
 
   header("location: /index.php");
   
