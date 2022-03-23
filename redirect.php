@@ -36,4 +36,5 @@ if (isset($_GET['code'])) {
   }else{
     echo("Sei gia registrato");
   }
+}
 ?>
