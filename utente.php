@@ -14,8 +14,8 @@
       echo "Questi sono i tuoi dati:"."</br>";
       echo "Nome: " .$_SESSION["nome"]."</br>";
       echo "Cognome: ".$_SESSION["cognome"]."</br>";
-      echo "Classe: ".$_SESSION["classe"]."</br>";
       echo "Email: ".$_SESSION["email"]."</br>";
+      echo "Classe: ".$_SESSION["classe"]."</br>";
       echo "Indirizzo: ".$_SESSION["indirizzo"]."</br>";
       echo "<p>Per comprare libri <a href=\"./dashboard.php\" />clicca qui.</a></p>";
       
