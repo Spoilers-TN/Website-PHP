@@ -25,7 +25,7 @@ if (isset($_GET['code'])) {
  $email =  $google_account_info->email;
  $name =  $google_account_info->name;
 
-  echo "Sei loggato bro complimenti !";
+  header("location: /index.php");
   
  // now you can use this profile info to create account in your website and make user logged in.
 } else {
