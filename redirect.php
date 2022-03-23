@@ -24,7 +24,7 @@
     $google_oauth = new Google_Service_Oauth2($client);
     $google_account_info = $google_oauth->userinfo->get();
     $_SESSION["email"] =  $google_account_info->email;
-    $_SESSION["nome"] =  $google_account_info->name;
+    $_SESSION["nome"] =  $google_account_info->_given_name;
     $_SESSION["cognome"] =  $google_account_info->family_name;
 
     echo $_SESSION["email"];
