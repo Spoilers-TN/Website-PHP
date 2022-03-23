@@ -27,10 +27,8 @@
     $_SESSION["nome"] =  $google_account_info->given_name;
     $_SESSION["cognome"] =  $google_account_info->family_name;
 
-    echo $_SESSION["email"];
-    echo $_SESSION["nome"];
-    echo $_SESSION["cognome"];
-    //header("location: /register.php");
+
+    header("location: /register.php");
     
    // now you can use this profile info to create account in your website and make user logged in.
   } else {
