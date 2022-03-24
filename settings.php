@@ -31,7 +31,6 @@
                         <div class="form-group">
                             <input type="text" class="form-control" rows="3" id="bio"
                               name="bio" placeholder="Sono Giacomo, ho 22 anni e vengo da Bologna....">
-                          <button type="submit">Salva modifiche</button>
                         </div>
 
                       <!--bottone salva-->
@@ -39,7 +38,7 @@
                         <div class="row">
                           <div class="col">
                             <div class="float-right">
-                              <button type="button" class="btn btn-warning" data-toggle="modal" 
+                              <button type="button" type="submit" class="btn btn-warning" data-toggle="modal" 
                                 data-target="#saveButton">
                                 Salva modifiche
                               </button>
