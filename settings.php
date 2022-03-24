@@ -38,10 +38,14 @@
                         <div class="row">
                           <div class="col">
                             <div class="float-right">
-                            <button type="button" action="./test,php" class="btn btn-warning" data-toggle="modal" data-target="#saveButton">
-                              Salva modifiche
-                            </button>
-                              
+                              <button type="button" action="./test.php" class="btn btn-warning" data-toggle="modal" data-target="#saveButton">
+                                Salva modifiche
+                              </button>
+                              <?php
+                                if(isset($_POST['submit'])){
+                                  
+                                }
+                              ?>
                             </div>
                           </div>
                         </div>
