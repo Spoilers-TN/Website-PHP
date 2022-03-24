@@ -38,9 +38,10 @@
                         <div class="row">
                           <div class="col">
                             <div class="float-right">
-                            <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#saveButton">
+                            <button type="button" action="./test,php" class="btn btn-warning" data-toggle="modal" data-target="#saveButton">
                               Salva modifiche
                             </button>
+                              
                             </div>
                           </div>
                         </div>
@@ -71,9 +72,3 @@
       </div>
 </form>
 </html>
-
-<?php
-if(isset($_POST["bio"])){
-  echo "Biografia impostata";
-}
-?>
