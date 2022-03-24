@@ -74,6 +74,6 @@
 
 <?php
 if(isset($_POST["bio"])){
-  echo "Biografia impostata"
+  echo "Biografia impostata";
 }
 ?>
