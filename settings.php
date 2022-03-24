@@ -16,7 +16,7 @@
                         <div class="form-group">
                             <label>Dati anagrafici</label>
                             <?php
-                            echo "<input type=\"email\" class=\"form-control\" readonly placeholder=\""."$_SESSION["email"]".">";
+                            echo $_SESSION["email"];
                             ?>
                         </div>
                         <div class="row">
