@@ -37,6 +37,5 @@
           echo("<p>non sei loggato!</p>");
         }
       ?>
-
     </body>
   </html>
