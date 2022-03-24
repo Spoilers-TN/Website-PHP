@@ -15,16 +15,14 @@
 
                         <div class="form-group">
                             <label>Dati anagrafici</label>
-                            <?php
-                            echo $_SESSION["email"];
-                            ?>
+                            <input type="email" class="form-control" readonly placeholder=<?php echo $_SESSION["email"]; ?>>
                         </div>
                         <div class="row">
                             <div class="col">
-                                <input type="text" class="form-control" readonly placeholder=<?php $_SESSION["nome"] ?>>
+                                <input type="text" class="form-control" readonly placeholder=<?php echo $_SESSION["nome"] ?>>
                             </div>
                             <div class="col">
-                                <input type="text" class="form-control" readonly placeholder=<?php $_SESSION["cognome"] ?>>
+                                <input type="text" class="form-control" readonly placeholder=<?php echo $_SESSION["cognome"] ?>>
                             </div>
                         </div>
 
