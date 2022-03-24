@@ -71,3 +71,9 @@
       </div>
 </form>
 </html>
+
+<?php
+if(isset($_POST["bio"])){
+  echo "Biografia impostata"
+}
+?>
