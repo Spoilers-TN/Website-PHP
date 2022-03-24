@@ -1,5 +1,8 @@
 <?php
-  
+  $cookie_name = "user";
+  $cookie_value = "";
+  setcookie($cookie_name, $cookie_value, time() + (86400 * 30), "/");
+
   session_start();
   
   require_once 'vendor/autoload.php';
@@ -32,7 +35,7 @@
     
    // now you can use this profile info to create account in your website and make user logged in.
   } else {
-    if(!isset($_SESSION["logged"])){
+    if(!isset($_COOKIE[$cookie_name])){
       header("location: ".$client->createAuthUrl());
     }else{
       echo "<p>Sei già loggato!</p>";
