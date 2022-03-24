@@ -26,7 +26,7 @@
                         </div>
 
                         <br>
-
+                        <form method="post" action="./test.php">
                         <label>Imposta la tua biografia.</label>
                         <div class="form-group">
                             <input type="text" class="form-control" rows="3" id="bio"
@@ -38,17 +38,18 @@
                         <div class="row">
                           <div class="col">
                             <div class="float-right">
-                              <form method="post" action="./test.php">
+                              
                               
                               <button type="submit" class="btn btn-warning" data-toggle="modal" 
                                 data-target="#saveButton">
                                 Salva modifiche
                               </button>
-                                </form>
+                            
                             </div>
                           </div>
                         </div>
                       </div>
+                          </form>
                       <!-- Modal -->
                       <div class="modal fade" id="saveButton" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="saveChanges" aria-hidden="true">
                         <div class="modal-dialog">
