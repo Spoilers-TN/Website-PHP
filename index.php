@@ -37,5 +37,7 @@
           echo("<p>non sei loggato!</p>");
         }
       ?>
+
+      <p><a href="test.php"/>test</a></p>
     </body>
   </html>
