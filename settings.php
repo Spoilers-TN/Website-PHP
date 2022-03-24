@@ -38,10 +38,13 @@
                         <div class="row">
                           <div class="col">
                             <div class="float-right">
-                              <button type="button" type="submit" class="btn btn-warning" data-toggle="modal" 
+                              <form method="post" action="./test.php">
+                              
+                              <button type="submit" class="btn btn-warning" data-toggle="modal" 
                                 data-target="#saveButton">
                                 Salva modifiche
                               </button>
+                                </form>
                             </div>
                           </div>
                         </div>
