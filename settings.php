@@ -1,4 +1,3 @@
-
 <?php
   session_start();
 ?>
@@ -32,7 +31,7 @@
                         <div class="form-group">
                             <input type="text" class="form-control" rows="3" id="bio"
                               name="bio" placeholder="Sono Giacomo, ho 22 anni e vengo da Bologna....">
-                          <input type="submit">
+                          <button type="submit">Salva modifiche</button>
                         </div>
 
                       <!--bottone salva-->
