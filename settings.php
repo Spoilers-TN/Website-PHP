@@ -7,11 +7,11 @@
   <form>
 
 <div class="card">
-            <div method="post" class="card-body">
+            <div class="card-body">
                 <h4 class="card-title">Modifica profilo</h4>
                 <div>
 
-                    <form action="./test.php">
+                    <form method="post" action="./test.php">
 
                         <div class="form-group">
                             <label>Dati anagrafici</label>
