@@ -7,7 +7,7 @@
   <form>
 
 <div class="card">
-            <div class="card-body">
+            <div method="post" class="card-body">
                 <h4 class="card-title">Modifica profilo</h4>
                 <div>
 
