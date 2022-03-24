@@ -7,5 +7,3 @@
         
     header("location: /dashboard.php");
 ?>
-
-
