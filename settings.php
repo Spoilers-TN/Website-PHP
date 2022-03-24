@@ -10,7 +10,7 @@
                 <h4 class="card-title">Modifica profilo</h4>
                 <div>
 
-                    <form method="post" action="./test.php">
+                    
 
                         <div class="form-group">
                             <label>Dati anagrafici</label>
@@ -70,5 +70,5 @@
             </div>
           </div>
       </div>
-</form>
+
 </html>
