@@ -11,7 +11,7 @@
                 <h4 class="card-title">Modifica profilo</h4>
                 <div>
 
-                    <form>
+                    <form action="./test.php">
 
                         <div class="form-group">
                             <label>Dati anagrafici</label>
@@ -38,7 +38,7 @@
                         <div class="row">
                           <div class="col">
                             <div class="float-right">
-                              <button type="button" action="./test.php" class="btn btn-warning" data-toggle="modal" 
+                              <button type="button" class="btn btn-warning" data-toggle="modal" 
                                 data-target="#saveButton">
                                 Salva modifiche
                               </button>
