@@ -8,10 +8,7 @@
 <div class="card">
             <div class="card-body">
                 <h4 class="card-title">Modifica profilo</h4>
-                <div>
-
-                    
-
+                </div>
                         <div class="form-group">
                             <label>Dati anagrafici</label>
                             <input type="email" class="form-control" readonly placeholder=<?php echo $_SESSION["email"]; ?>>
@@ -30,7 +27,7 @@
                         <label>Imposta la tua biografia.</label>
                         <div class="form-group">
                             <input type="text" class="form-control" rows="3" id="bio"
-                              name="bio" placeholder="Sono Giacomo, ho 22 anni e vengo da Bologna....">
+                              name="bio" placeholder="Sono Giacomo, ho 22 anni e vengo da Bologna...." required>
                         </div>
 
                       <!--bottone salva-->
@@ -40,8 +37,7 @@
                             <div class="float-right">
                               
                               
-                              <button type="submit" class="btn btn-warning" data-toggle="modal" 
-                                data-target="#saveButton">
+                              <button type="submit" class="btn btn-warning" data-toggle="modal" data-target="#saveButton" name="salva">
                                 Salva modifiche
                               </button>
                             
@@ -49,7 +45,7 @@
                           </div>
                         </div>
                       </div>
-                          </form>
+                      </form>
                       <!-- Modal -->
                       <div class="modal fade" id="saveButton" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="saveChanges" aria-hidden="true">
                         <div class="modal-dialog">
