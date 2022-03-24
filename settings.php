@@ -21,10 +21,10 @@
                         </div>
                         <div class="row">
                             <div class="col">
-                                <input type="text" class="form-control" readonly placeholder="Nome">
+                                <input type="text" class="form-control" readonly placeholder=<?php $_SESSION["nome"] ?>>
                             </div>
                             <div class="col">
-                                <input type="text" class="form-control" readonly placeholder="Cognome">
+                                <input type="text" class="form-control" readonly placeholder=<?php $_SESSION["cognome"] ?>>
                             </div>
                         </div>
 
