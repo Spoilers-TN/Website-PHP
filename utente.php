@@ -1,13 +1,15 @@
+<?php
+session_start();
+?>
+
 <html>
   <title>DATI UTENTI</title>
   
   <h1>DATI UTENTE</h1>
-  <img src="https://robohash.org/adasd">
+  <img src="<?php echo $url;?>https://robohash.org/".$SESSION["email"]></a>
   </br></br>
 </html>
 <?php
-  //inizio sessione
-  session_start();
   
   if(isset($_SESSION["logged"])){
       echo "Welcome: ".$_SESSION["nome"]." ";
