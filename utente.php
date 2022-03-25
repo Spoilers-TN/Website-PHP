@@ -2,8 +2,8 @@
   <title>DATI UTENTI</title>
   
   <h1>DATI UTENTE</h1>
+  <img src="https://robohash.org/adasd">
 </html>
-
 <?php
   //inizio sessione
   session_start();

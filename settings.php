@@ -27,7 +27,7 @@
                         <label>Imposta la tua biografia.</label>
                         <div class="form-group">
                             <input type="text" class="form-control" rows="3" id="bio"
-                              name="bio" placeholder="Sono Giacomo, ho 22 anni e vengo da Bologna...." required></br>
+                              name="bio" placeholder="es: Sono Jeffry, ho 2209 anni e vengo da Napoli...." required></br>
                         </div>
 
                       <!--bottone salva-->
