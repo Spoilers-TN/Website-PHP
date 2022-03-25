@@ -6,8 +6,8 @@ session_start();
   <title>DATI UTENTI</title>
   
   <h1>DATI UTENTE</h1>
-  <img src="<?php echo $url;?>https://robohash.org/".$SESSION["email"]></a>
-  </br></br>
+  <img src=<?php echo "https://robohash.org/".$_SESSION["email"].".png"?>>
+  </br>
 </html>
 <?php
   
