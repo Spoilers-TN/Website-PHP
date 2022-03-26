@@ -29,7 +29,7 @@
     $_SESSION["cognome"] =  $google_account_info->family_name;
 
 
-    header("location: ../Private/register.php");
+    header("location: register.php");
     
    // now you can use this profile info to create account in your website and make user logged in.
   } else {
