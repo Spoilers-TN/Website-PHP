@@ -32,12 +32,14 @@
     
     <div class="form-group">
       
-      <input type="text" class="form-control" rows="3" id="biografia" name="biografia" placeholder="Biografia">
+      <input type="text" class="form-control" rows="3" id="biografia" name="biografia" placeholder="Biografia" required>
+      
       
       <button type="submit" name="save_bio" id="save_bio">
         Salva
       </button>
 
+      <?php echo "<br>La tua biografia:<br>".$_SESSION["biografia"]; ?>
     </div>
   </form>
   <br>
