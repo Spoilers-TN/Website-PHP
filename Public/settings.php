@@ -39,13 +39,10 @@
         <?php
           if(isset($_POST["save_bio"])){
             $_SESSION["biografia"] = $_POST["biografia"];
-            $query = "UPDATE INTO Users (User_Biog) WHERE User_ID='".$_SESSION["email"]."' SET User_Biog='".$_SESSION["biografia"]."'";
+            $query = "UPDATE Users (User_Biog) WHERE User_ID='".$_SESSION["email"]."' SET User_Biog='".$_SESSION["biografia"]."'";
             $insert = mysqli_query($db_conn, $query);
           }
-          else{
-            echo "Non va :)";
-          }
-          echo "<br>La tua biografia:<br>".$_SESSION["biografia"];
+          echo "SELECT User_Biog FROM Users WHERE User_ID='".$_SESSION["email"]."'";
         ?>
 
       </div>
