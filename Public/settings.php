@@ -30,25 +30,25 @@
                         <label>Imposta la tua biografia.</label>
                         <div class="form-group">
                           <input type="text" class="form-control" rows="3" id="biografia" name="biografia"
-                            placeholder="<?php $User_Biog ?>" required>
+                            placeholder="Biografia">
                           <button type="submit" name="save_bio" id="save_bio">
                             Salva
                           </button>
-                  <?php 
-                    if(isset($_POST["save_bio"])){
-                      $query = "INSERT INTO users (User_Biog)"."VALUES('".$_POST["biografia"]."')";
-  
-                      $insert = mysqli_query($db_conn, $query);
-                      echo $_POST["save_bio"];
-                    }
-                    else{
-                      echo "Biografia non impostata";
-                    }
-                  ?></br>
+                          <?php 
+                            if(isset($_POST["biografia"])){
+                              $query = "INSERT INTO users (User_Biog)"."VALUES('".$_POST["biografia"]."')";
+          
+                              $insert = mysqli_query($db_conn, $query);
+                              echo $_POST["biografia"];
+                            }
+                              
+                          ?>
+                          </br>
+                          
                         </div>
 
                       <!--bottone salva-->
-                      <div class="container">
+                      <!--<div class="container">
                         <div class="row">
                           <div class="col">
                             <div class="float-right">
@@ -56,7 +56,7 @@
                               
                               <button type="submit" class="btn btn-warning" data-toggle="modal" data-target="#saveButton" name="salva">
                                 Salva modifiche
-                              </button>
+                              </button>-->
                             
                             </div>
                           </div>
