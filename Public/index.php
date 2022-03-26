@@ -23,7 +23,7 @@
           echo "<a href=\"https://beta-dev.spoilers.tn.it/login.php\" />login</a></p>";
         }
         else{
-          echo "<a href=\"./redirect.php\" />login</a></p>";
+          echo "<a href=\"https://beta-dev.spoilers.tn.it/redirect.php\" />login</a></p>";
         }
       ?>
       </p>
