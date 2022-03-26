@@ -1,4 +1,6 @@
 <?php
+  include '../Private/connessione.php'
+
   $_SESSION["biografia"] = $_POST["biografia"];
   if(isset($_SESSION["biografia"])){
     $query = "UPDATE INTO Users (User_Biog) WHERE User_ID=".$_SESSION["email"]."SET User_Biog=".$_SESSION["biografia"];
