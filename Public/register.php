@@ -1,7 +1,7 @@
 <?php
   //start the session
   session_start();
-  include 'Private/connessione.php';
+  include '../Private/connessione.php';
 
 ?>
 
@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="/css/style.css">
   </head>
     <body>
-        <form method="post" action="./Private/register_worker.php">
+        <form method="post" action="https://beta-dev.spoilers.tn.it/register_worker.php">
           <h1>Registrazione</h1>
           
           <input type="classe" id="classe" placeholder="Classe" name="classe" required><br>
