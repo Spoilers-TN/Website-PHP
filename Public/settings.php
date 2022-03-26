@@ -41,8 +41,13 @@
             $_SESSION["biografia"] = $_POST["biografia"];
             $query = "UPDATE INTO Users (User_Biog) WHERE User_ID='".$_SESSION["email"]."' SET User_Biog='".$_SESSION["biografia"]."'";
             $insert = mysqli_query($db_conn, $query);
+            if ($db_conn->query($query) === TRUE) {
+              echo "Record updated successfully";
+            } else {
+              echo "Error updating record: " . $db_conn->error;
           }
-          mysqli_query($db_conn, "SELECT User_Biog FROM Users WHERE User_ID='".$_SESSION["email"]."'");
+          }
+          //mysqli_query($db_conn, "SELECT User_Biog FROM Users WHERE User_ID='".$_SESSION["email"]."'");
         ?>
 
       </div>
