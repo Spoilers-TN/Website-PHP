@@ -1,5 +1,6 @@
 <?php
-  include '../Private/connessione.php'
+  include '../Private/connessione.php';
+  session_start();
 
   $_SESSION["biografia"] = $_POST["biografia"];
   if(isset($_SESSION["biografia"])){
