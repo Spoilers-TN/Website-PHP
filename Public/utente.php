@@ -16,7 +16,10 @@ session_start();
   $query= "SELECT User_Biog FROM Users WHERE User_id='".$_SESSION["email"]."'";
   $result = $db_conn->query($query);
 
-  
+  if($result->num_rows > 0){
+    $row = $result->fetch_assoc();
+    echo $row["User_Biog"];
+  }
 
   if(isset($_SESSION["logged"])){
       echo "Welcome: ".$_SESSION["nome"]." ";
