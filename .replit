@@ -1,2 +1,2 @@
-language = "php"
-run = "/usr/bin/php -S"
+language = "undefined"
+run = ""
