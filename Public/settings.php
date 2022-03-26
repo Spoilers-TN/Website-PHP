@@ -40,7 +40,7 @@
       
       <?php
         if(isset($_POST["biografia"])){
-          $query = "UPDATE INTO Users (User_Biog) WHERE User_ID=".$_SESSION["email"]"."SET User_Biog="."$_POST["biografia"]";
+          $query = "UPDATE INTO Users (User_Biog) WHERE User_ID=".$_SESSION["email"]."SET User_Biog=".$_POST["biografia"];
           $insert = mysqli_query($db_conn, $query);
           echo $_POST["biografia"];
         }
