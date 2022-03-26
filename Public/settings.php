@@ -34,9 +34,11 @@
                           <button type="submit" name="save_bio" id="save_bio">
                             Salva
                           </button>
-<?php $query = "INSERT INTO users (User_Biog)"."VALUES('".$_POST["save_bio"]."')";
-
-                    $insert = mysqli_query($db_conn, $query);?></br>
+                <?php 
+                    if(isset($_POST["biografia"])){
+                      $query = "INSERT INTO users (User_Biog)"."VALUES('".$_POST["biografia"]."')";
+  
+                      $insert = mysqli_query($db_conn, $query);?></br>
                         </div>
 
                       <!--bottone salva-->
