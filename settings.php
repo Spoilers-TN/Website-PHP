@@ -27,7 +27,9 @@
                         <label>Imposta la tua biografia.</label>
                         <div class="form-group">
                             <input type="text" class="form-control" rows="3" id="bio"
-                              name="bio" placeholder="es: Sono Jeffry, ho 45 anni e vengo da Napoli...." required></br>
+                              name="biografia" placeholder="es: Sono Jeffry, ho 45 anni e vengo da Napoli...." required> 
+<?php $query = "INSERT INTO users (user_biog) ". "VALUES('$biografia')";
+                    $insert = mysqli_query($db_conn, $query);?></br>
                         </div>
 
                       <!--bottone salva-->

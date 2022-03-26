@@ -15,7 +15,7 @@
             if (!isset($error_message)) {
                 if (isset($_POST['btnRicerca'])){
                     $ricerca = trim(($_POST['txtRicerca']));
-                
+
                     $query    = "SELECT id_contatti, nome, cognome, codice_fiscale, data_nascita, ora_nascita from tcontatti WHERE nome LIKE '%$ricerca%' OR cognome LIKE '%$ricerca%'";
                                 
                     $resulset = @mysqli_query($db_conn, $query);

@@ -27,7 +27,6 @@
       ?>
       </p>
       <p>Per accedere al nostro sito Web <a href="https://www.spoilers.tn.it" target="_blank" />clicca qui.</a></p>
-      
       <?php
         if(isset($_SESSION["logged"])){
           echo "<p>Per accedere al tuo profilo <a href=\"./utente.php\" />clicca qui.</a></p>";
