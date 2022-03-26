@@ -13,7 +13,7 @@ session_start();
   <br>
 </html>
 <?php
-  $query= "SELECT User_Biog FROM Users";
+  $query= "SELECT User_Biog FROM Users WHERE User_id='".$_SESSION["email"]."'";
   $result = $db_conn->query($query);
   if(isset($_SESSION["logged"])){
       echo "Welcome: ".$_SESSION["nome"]." ";
