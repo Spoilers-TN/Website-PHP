@@ -26,7 +26,7 @@
   </div>
 
   <br>
-  <form method="post" action="https://beta-dev.spoilers.tn.it/bio_worker.php">
+  <form method="POST" action="https://beta-dev.spoilers.tn.it/bio_worker.php">
     
     <label>Imposta la tua biografia.</label>
     
