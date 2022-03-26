@@ -30,11 +30,12 @@
                         <label>Imposta la tua biografia.</label>
                         <div class="form-group">
                           <input type="text" class="form-control" rows="3" id="biografia" name="biografia"
-                            placeholder="<?php $User_Biog ?>">
-                          <button type="submit" name="biografia" id="biografia">
+                            placeholder="<?php $User_Biog ?>" required>
+                          <button type="submit" name="save_bio" id="save_bio">
                             Salva
                           </button>
-<?php $query = "INSERT INTO users (User_Biog)"."VALUES('".$_POST["biografia"]."')";
+                          <?php $_SESSION["biografia"] = $_POST["biografia"]?>
+<?php $query = "INSERT INTO users (User_Biog)"."VALUES('".$_SESSION["biografia"]."')";
 
                     $insert = mysqli_query($db_conn, $query);?></br>
                         </div>
@@ -70,7 +71,7 @@
                             </div>
                             <div class="modal-footer">
                               <button type="button" class="btn btn-secondary" data-dismiss="modal">Annulla</button>
-                              <a class="btn btn-warning" href="/dashboard.html">Sì</a>
+                              <a class="btn btn-warning" href="/Public/dashboard.html">Sì</a>
                             </div>
                           </div>
                         </div>

@@ -5,6 +5,6 @@
   unset($_COOKIE['user']); 
   setcookie('user', null, -1, '/');
   
-  header("location: /index.php?logout=ok");
+  header("location: /Public/index.php?logout=ok");
 
 ?>

@@ -14,13 +14,13 @@
     <body>
       <h1>LIBRAIMOVIC</h1>
       
-      <p>Per accedere al tuo profilo <a href="./utente.php" />clicca qui.</a></p>
+      <p>Per accedere al tuo profilo <a href="./Public/utente.php" />clicca qui.</a></p>
       
       <h3>Qui puoi cercare i tuoi libri!</h3>
       
       <input type="text" id="libro" placeholder="" name="libro">
       <button type="submit" name="libro">Cerca</button>
       
-      <p>clicca qui per tornare alla <a href="./index.php" />home</a></p>
+      <p>clicca qui per tornare alla <a href="./Public/index.php" />home</a></p>
     </body>
   </html>

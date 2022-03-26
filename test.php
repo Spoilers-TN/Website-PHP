@@ -1,6 +1,6 @@
 <?php
 session_start();
-  include 'connessione.php';
+  include '/Priconnessione.php';
 
 
 if(isset($_POST["bio"])){

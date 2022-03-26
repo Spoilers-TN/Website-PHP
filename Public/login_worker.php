@@ -5,7 +5,7 @@
 
   
   if(isset($_SESSION["logged"])){
-    header("location: /dashboard.php?");
+    header("location: /Public/dashboard.php?");
   }else{
-    echo("Non sei registrato clicca <a href='./register.php' />qui</a> per registrarti");
+    echo("Non sei registrato clicca <a href='./Private/register.php' />qui</a> per registrarti");
   }

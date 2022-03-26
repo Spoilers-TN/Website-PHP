@@ -7,5 +7,5 @@
     $_SESSION["indirizzo"] = $_POST["indirizzo"];
     $_SESSION["logged"] = true;
         
-    header("location: /dashboard.php");
+    header("location: /Public/dashboard.php");
 ?>

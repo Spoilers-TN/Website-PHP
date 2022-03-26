@@ -60,14 +60,14 @@
                             </tbody>
                         </table>		
                         <br>
-                        <a href="index.php">Torna indietro</a>
+                        <a href="Public/index.php">Torna indietro</a>
         <?php        
                     } else {
                         $message = "Nessun contatto presente!";
                         
                         echo $message;
                         
-                        header("refresh:3; index.php");
+                        header("refresh:3; Public/index.php");
                     }
                 } else {
         ?>
@@ -92,7 +92,7 @@
             } else {
                 echo $error_message;                
                 
-                header("refresh:3; index.php");
+                header("refresh:3; Public/index.php");
             }
         ?>
     </body>

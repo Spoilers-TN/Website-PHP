@@ -34,7 +34,7 @@
 
                     echo $message;     
                     
-                    header("refresh:3; index.php");
+                    header("refresh:3; Public/index.php");
                 } else {
         ?>
                     <form name="frmContattiInserimento" action="<?=$_SERVER['PHP_SELF']?>" method="post">
@@ -82,7 +82,7 @@
             } else {
                 echo $error_message;                
                 
-                header("refresh:3; index.php");
+                header("refresh:3; Public/index.php");
             }
         ?>
     </body>
