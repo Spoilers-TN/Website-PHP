@@ -14,7 +14,7 @@
     <body>
       <h1>LIBRAIMOVIC</h1>
       
-      <p>Per accedere al tuo profilo <a href="./Public/utente.php" />clicca qui.</a></p>
+      <p>Per accedere al tuo profilo <a href="https://beta-dev.spoilers.tn.it//utente.php" />clicca qui.</a></p>
       
       <h3>Qui puoi cercare i tuoi libri!</h3>
       
