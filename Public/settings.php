@@ -39,10 +39,8 @@
       </button>
       
       <?php
-        echo $_POST["biografia"];
         if(isset($_POST["biografia"])){
-          $query = "INSERT INTO Users (User_Biog)"."VALUES('".$_POST["biografia"]."')";
-          $query = "UPDATE INTO Users (User_Biog) WHERE User_ID=".$_SESSION["email"]"."SET User_Biog="."
+          $query = "UPDATE INTO Users (User_Biog) WHERE User_ID=".$_SESSION["email"]"."SET User_Biog="."$_POST["biografia"]";
           $insert = mysqli_query($db_conn, $query);
           echo $_POST["biografia"];
         }
