@@ -1,7 +1,7 @@
 <?php
   // Start the session
   session_start();
-  include './Private/connessione.php';
+  include '../Private/connessione.php';
 
   
   if(isset($_SESSION["logged"])){

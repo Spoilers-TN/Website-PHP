@@ -2,7 +2,7 @@
   //beta-dev.spoilers.tn.it/index.php
   // Start the session
   session_start();
-  include 'Private/connessione.php';
+  include '../Private/connessione.php';
     
 ?>
 

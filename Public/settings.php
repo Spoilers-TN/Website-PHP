@@ -1,6 +1,6 @@
 <?php
   session_start();
-  include './Private/connessione.php';
+  include '../Private/connessione.php';
 
 ?>
 
