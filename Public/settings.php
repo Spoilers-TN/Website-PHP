@@ -42,7 +42,7 @@
             $query = "UPDATE INTO Users (User_Biog) WHERE User_ID='".$_SESSION["email"]."' SET User_Biog='".$_SESSION["biografia"]."'";
             $insert = mysqli_query($db_conn, $query);
           }
-          mysqli_query("SELECT User_Biog FROM Users WHERE User_ID='".$_SESSION["email"]."'");
+          mysqli_query($db_conn, "SELECT User_Biog FROM Users WHERE User_ID='".$_SESSION["email"]."'");
         ?>
 
       </div>
