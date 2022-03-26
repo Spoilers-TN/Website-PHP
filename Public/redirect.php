@@ -3,7 +3,7 @@
   include '../Private/connessione.php';
 
   
-  require_once 'vendor/autoload.php';
+  require_once '../vendor/autoload.php';
   $clientID = '750408780393-lsn833luim1lqd11dtpnuscil3ast00e.apps.googleusercontent.com';
   $clientSecret = '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';
   $redirectUri = 'https://beta-dev.spoilers.tn.it/Public/redirect.php';
