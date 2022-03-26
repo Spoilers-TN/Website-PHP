@@ -1,6 +1,8 @@
 <?php
   // Start the session
   session_start();
+  include 'connessione.php';
+
   
   if(isset($_SESSION["logged"])){
     header("location: /dashboard.php?");

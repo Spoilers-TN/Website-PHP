@@ -1,5 +1,7 @@
 <?php
   session_start();
+  include 'connessione.php';
+
   
   require_once 'vendor/autoload.php';
   $clientID = '750408780393-lsn833luim1lqd11dtpnuscil3ast00e.apps.googleusercontent.com';
