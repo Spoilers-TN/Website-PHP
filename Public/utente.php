@@ -24,7 +24,7 @@ session_start();
       echo "Email: ".$_SESSION["email"]."</br>";
       echo "Classe: ".$_SESSION["classe"]."</br>";
       echo "Indirizzo: ".$_SESSION["indirizzo"]."</br>";
-      echo "Biografia: ".$result["User_Biog"]."</br>;
+      echo "Biografia: ".$result["User_Biog"]."</br>";
       echo "<p>Per comprare libri <a href=\"https://beta-dev.spoilers.tn.it/dashboard.php\" />clicca qui.</a></p>";
       
   }else{
