@@ -43,7 +43,7 @@
                                 echo $_POST["biografia"];
                               }
                               else{
-                                echo "Non va :)"
+                                echo "Non va :)";
                               }
                               echo "<br>La tua biografia:<br>".$_POST["biografia"];
                             ?>

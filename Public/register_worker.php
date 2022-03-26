@@ -7,5 +7,5 @@
     $_SESSION["indirizzo"] = $_POST["indirizzo"];
     $_SESSION["logged"] = true;
         
-    header("location: /Public/dashboard.php");
+    header("location: https://beta-dev.spoilers.tn.it/dashboard.php");
 ?>

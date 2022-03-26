@@ -21,6 +21,6 @@
       <input type="text" id="libro" placeholder="" name="libro">
       <button type="submit" name="libro">Cerca</button>
       
-      <p>clicca qui per tornare alla <a href="./Public/index.php" />home</a></p>
+      <p>clicca qui per tornare alla <a href="/index.php" />home</a></p>
     </body>
   </html>
