@@ -41,7 +41,7 @@
                               $insert = mysqli_query($db_conn, $query);
                               echo $_POST["biografia"];
                             }
-                              
+                            echo "<br>La tua biografia:<br>".$User_Biog;
                           ?>
                           </br>
                           

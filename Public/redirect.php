@@ -6,7 +6,7 @@
   require_once '../vendor/autoload.php';
   $clientID = '750408780393-lsn833luim1lqd11dtpnuscil3ast00e.apps.googleusercontent.com';
   $clientSecret = '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';
-  $redirectUri = 'https://beta-dev.spoilers.tn.it/Public/redirect.php';
+  $redirectUri = 'https://beta-dev.spoilers.tn.it/redirect.php';
   
   // create Client Request to access Google API
   $client = new Google_Client();
