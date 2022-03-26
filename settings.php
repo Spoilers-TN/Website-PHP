@@ -34,7 +34,7 @@
                           <button type="submit" name="biografia">
                             Salva
                           </button>
-<?php $query = "INSERT INTO users (User_Biog)"."VALUES('$_POST[biografia]')";
+<?php $query = "INSERT INTO users (User_Biog)"."VALUES('$_POST["biografia"]')";
 
                     $insert = mysqli_query($db_conn, $query);?></br>
                         </div>
