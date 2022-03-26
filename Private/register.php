@@ -1,7 +1,7 @@
 <?php
   //start the session
   session_start();
-  include 'connessione.php';
+  include 'Private/connessione.php';
 
 ?>
 

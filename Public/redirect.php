@@ -1,6 +1,6 @@
 <?php
   session_start();
-  include 'connessione.php';
+  include './Private/connessione.php';
 
   
   require_once 'vendor/autoload.php';
