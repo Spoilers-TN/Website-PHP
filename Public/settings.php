@@ -31,10 +31,10 @@
                         <div class="form-group">
                           <input type="text" class="form-control" rows="3" id="biografia" name="biografia"
                             placeholder="<?php $User_Biog ?>">
-                          <button type="submit" name="biografia">
+                          <button type="submit" name="biografia" id="biografia">
                             Salva
                           </button>
-<?php $query = "INSERT INTO users (User_Biog)"."VALUES('$_POST[\"biografia\"]')";
+<?php $query = "INSERT INTO users (User_Biog)"."VALUES('".$_POST["biografia"]."')";
 
                     $insert = mysqli_query($db_conn, $query);?></br>
                         </div>

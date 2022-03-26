@@ -1,3 +1,2 @@
-replit.it
-language = "undefined"
-run = ""
+language = "php"
+run = "/usr/bin/php -S"

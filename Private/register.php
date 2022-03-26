@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="/css/style.css">
   </head>
     <body>
-        <form method="post" action="./register_worker.php">
+        <form method="post" action="./Private/register_worker.php">
           <h1>Registrazione</h1>
           
           <input type="classe" id="classe" placeholder="Classe" name="classe" required><br>
