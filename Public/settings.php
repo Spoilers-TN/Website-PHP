@@ -9,47 +9,52 @@
   <form>
 
 <div class="card">
-            <div class="card-body">
-                <h4 class="card-title">Modifica profilo</h4>
-                </div>
-                        <div class="form-group">
-                            <label>Dati anagrafici</label>
-                            <input type="email" class="form-control" readonly placeholder=<?php echo $_SESSION["email"]; ?>>
-                        </div>
-                        <div class="row">
-                            <div class="col">
-                                <input type="text" class="form-control" readonly placeholder=<?php echo $_SESSION["nome"] ?>>
-                            </div>
-                            <div class="col">
-                                <input type="text" class="form-control" readonly placeholder=<?php echo $_SESSION["cognome"] ?>>
-                            </div>
-                        </div>
+  <div class="card-body">
+    <h4 class="card-title">Modifica profilo</h4>
+  </div>
+  <div class="form-group">
+    <label>Dati anagrafici</label>
+    <input type="email" class="form-control" readonly placeholder=<?php echo $_SESSION["email"]; ?>>
+  </div>
+  <div class="row">
+    <div class="col">
+      <input type="text" class="form-control" readonly placeholder=<?php echo $_SESSION["nome"] ?>>
+    </div>
+    <div class="col">
+      <input type="text" class="form-control" readonly placeholder=<?php echo $_SESSION["cognome"] ?>>
+    </div>
+  </div>
 
-                        <br>
-                        <form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
-                          
-                          <label>Imposta la tua biografia.</label>
-                          
-                          <div class="form-group">
-                            <input type="text" class="form-control" rows="3" id="biografia" name="biografia"
-                              placeholder="Biografia">
-                            <button type="submit" name="save_bio" id="save_bio">
-                              Salva
-                            </button>
-                            <?php 
-                              if(isset($_POST["biografia"])){
-                                $query = "INSERT INTO Users (User_Biog)"."VALUES('".$_POST["biografia"]."')";
-                                $insert = mysqli_query($db_conn, $query);
-                                echo $_POST["biografia"];
-                              }
-                              else{
-                                echo "Non va :)";
-                              }
-                              echo "<br>La tua biografia:<br>".$_POST["biografia"];
-                            ?>
-                          </div>
-                        </form>
-                        <br>
+  <br>
+  <form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
+    
+    <label>Imposta la tua biografia.</label>
+    
+    <div class="form-group">
+      
+      <input type="text" class="form-control" rows="3" id="biografia" name="biografia" placeholder="Biografia">
+      
+      <button type="submit" name="save_bio" id="save_bio">
+        Salva
+      </button>
+      
+      <?php
+        echo $_POST["biografia"];
+        if(isset($_POST["biografia"])){
+          $query = "INSERT INTO Users (User_Biog)"."VALUES('".$_POST["biografia"]."')";
+          $query = "UPDATE INTO Users (User_Biog) WHERE User_ID=".$_SESSION["email"]"."SET User_Biog="."
+          $insert = mysqli_query($db_conn, $query);
+          echo $_POST["biografia"];
+        }
+        else{
+          echo "Non va :)";
+        }
+        echo "<br>La tua biografia:<br>".$_POST["biografia"];
+      ?>
+
+    </div>
+  </form>
+  <br>
 
                       <!--bottone salva-->
                       <!--<div class="container">
