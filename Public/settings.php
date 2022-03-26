@@ -35,11 +35,11 @@
       <input type="text" class="form-control" rows="3" id="biografia" name="biografia" placeholder="Biografia" required>
       
       
-      <button type="submit" name="save_bio" id="save_bio" href="https://beta-dev.spoilers.tn.it/settings.php">
+      <button type="submit" name="save_bio" id="save_bio">
         Salva
       </button>
 
-      <?php //echo "<br>La tua biografia:<br>".$_SESSION["biografia"]; ?>
+      <?php echo "<br>La tua biografia:<br>".$_SESSION["biografia"]; ?>
     </div>
   </form>
   <br>
