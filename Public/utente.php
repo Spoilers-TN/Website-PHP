@@ -23,7 +23,7 @@ session_start();
       echo "Email: ".$_SESSION["email"]."</br>";
       echo "Classe: ".$_SESSION["classe"]."</br>";
       echo "Indirizzo: ".$_SESSION["indirizzo"]."</br>";
-      echo "<p>Per comprare libri <a href=\"./dashboard.php\" />clicca qui.</a></p>";
+      echo "<p>Per comprare libri <a href=\"https://beta-dev.spoilers.tn.it/dashboard.php\" />clicca qui.</a></p>";
       
   }else{
     echo "<p>non sei registrato!!!</p>";
@@ -31,7 +31,7 @@ session_start();
 ?>
 
 <html>
-  <p>Clicca qui per modificare il <a href="./settings.php"/>profilo</a></p>
+  <p>Clicca qui per modificare il <a href=".https://beta-dev.spoilers.tn.it/settings.php"/>profilo</a></p>
   <p>clicca qui per tornare alla <a href="./index.php" />home</a></p>
 </html>
  

@@ -27,25 +27,27 @@
 
                         <br>
                         <form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
-                        <label>Imposta la tua biografia.</label>
-                        <div class="form-group">
-                          <input type="text" class="form-control" rows="3" id="biografia" name="biografia"
-                            placeholder="Biografia">
-                          <button type="submit" name="save_bio" id="save_bio">
-                            Salva
-                          </button>
-                          <?php 
-                            if(isset($_POST["biografia"])){
-                              $query = "INSERT INTO Users (User_Biog)"."VALUES('".$_POST["biografia"]."')";
-          
-                              $insert = mysqli_query($db_conn, $query);
-                              echo $_POST["biografia"];
-                            }
-                            echo "<br>La tua biografia:<br>".$_POST["biografia"];
-                          ?>
-                          </br>
                           
-                        </div>
+                          <label>Imposta la tua biografia.</label>
+                          
+                          <div class="form-group">
+                            <input type="text" class="form-control" rows="3" id="biografia" name="biografia"
+                              placeholder="Biografia">
+                            <button type="submit" name="save_bio" id="save_bio">
+                              Salva
+                            </button>
+                            <?php 
+                              if(isset($_POST["biografia"])){
+                                $query = "INSERT INTO Users (User_Biog)"."VALUES('".$_POST["biografia"]."')";
+            
+                                $insert = mysqli_query($db_conn, $query);
+                                echo $_POST["biografia"];
+                              }
+                              echo "<br>La tua biografia:<br>".$_POST["biografia"];
+                            ?>
+                          </div>
+                        </form>
+                        <br>
 
                       <!--bottone salva-->
                       <!--<div class="container">
@@ -62,7 +64,6 @@
                           </div>
                         </div>
                       </div>
-                      </form>
                       <!-- Modal -->
                       <div class="modal fade" id="saveButton" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="saveChanges" aria-hidden="true">
                         <div class="modal-dialog">
