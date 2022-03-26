@@ -1,7 +1,7 @@
 <?php
     $db_host = '170.187.185.240';
     $db_user = 'spoilersdb';
-    $db_pass = '';
+    $db_pass = 'UVF8Bjqn';
     $db_name = 'Spoilers-DB@170.187.185.240';
 
     try{           
