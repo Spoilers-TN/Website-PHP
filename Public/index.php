@@ -3,7 +3,6 @@
   // Start the session
   session_start();
   include '../Private/connessione.php';
-
 ?>
 
 <!doctype html>
