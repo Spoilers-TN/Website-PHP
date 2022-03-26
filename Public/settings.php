@@ -39,7 +39,7 @@
         Salva
       </button>
 
-      <?php echo "<br>La tua biografia:<br>".$_SESSION["biografia"]; ?>
+      <?php //echo "<br>La tua biografia:<br>".$_SESSION["biografia"]; ?>
     </div>
   </form>
   <br>
