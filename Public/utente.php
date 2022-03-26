@@ -13,7 +13,8 @@ session_start();
   <br>
 </html>
 <?php
-  
+  $query= "SELECT User_Biog FROM Users";
+  $result = $db_conn->query($query);
   if(isset($_SESSION["logged"])){
       echo "Welcome: ".$_SESSION["nome"]." ";
       echo  $_SESSION["cognome"]."</br>";
@@ -23,6 +24,7 @@ session_start();
       echo "Email: ".$_SESSION["email"]."</br>";
       echo "Classe: ".$_SESSION["classe"]."</br>";
       echo "Indirizzo: ".$_SESSION["indirizzo"]."</br>";
+      echo "Biografia: ".$result["User_Biog"]."</br>;
       echo "<p>Per comprare libri <a href=\"https://beta-dev.spoilers.tn.it/dashboard.php\" />clicca qui.</a></p>";
       
   }else{
