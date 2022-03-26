@@ -32,14 +32,13 @@
         
         <input type="text" class="form-control" rows="3" id="biografia" name="biografia" placeholder="Biografia" required>
         
-        
         <button type="submit" name="save_bio" id="save_bio">
           Salva
         </button>
   
         <?php
-
-          $_SESSION["biografia"] = $_POST["biografia"];
+          
+          $_SESSION["biografia"] = "Ciaoooo";
 
           if(isset($_SESSION["biografia"])){
             $query = "UPDATE INTO Users (User_Biog) WHERE User_ID='".$_SESSION["email"]."' SET User_Biog='".$_SESSION["biografia"]."'";
