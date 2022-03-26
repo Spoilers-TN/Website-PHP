@@ -37,8 +37,6 @@
         </button>
   
         <?php
-          
-          $_SESSION["biografia"] = "Ciaoooo";
 
           if(isset($_SESSION["biografia"])){
             $query = "UPDATE INTO Users (User_Biog) WHERE User_ID='".$_SESSION["email"]."' SET User_Biog='".$_SESSION["biografia"]."'";

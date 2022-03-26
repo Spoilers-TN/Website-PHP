@@ -1,8 +1,8 @@
 <?php
-    $db_host = '170.187.185.240';
+    $db_host = '127.0.0.1';
     $db_user = 'spoilersdb';
     $db_pass = 'UVF8Bjqn';
-    $db_name = 'Spoilers-DB@170.187.185.240';
+    $db_name = 'BookPlatform';
 
     try{           
         $db_conn = @mysqli_connect($db_host, $db_user, $db_pass, $db_name);
