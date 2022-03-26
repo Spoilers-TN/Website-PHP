@@ -35,11 +35,11 @@
                             Salva
                           </button>
                   <?php 
-                    if(isset($_POST["biografia"])){
+                    if(isset($_POST["save_bio"])){
                       $query = "INSERT INTO users (User_Biog)"."VALUES('".$_POST["biografia"]."')";
   
                       $insert = mysqli_query($db_conn, $query);
-                      echo $_POST["biografia"];
+                      echo $_POST["save_bio"];
                     }
                     else{
                       echo "Biografia non impostata";
