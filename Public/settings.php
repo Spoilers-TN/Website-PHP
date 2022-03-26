@@ -39,9 +39,10 @@
                       $query = "INSERT INTO users (User_Biog)"."VALUES('".$_POST["biografia"]."')";
   
                       $insert = mysqli_query($db_conn, $query);
+                      echo $_POST["biografia"];
                     }
                     else{
-                      
+                      echo "Biografia non impostata";
                     }
                   ?></br>
                         </div>
