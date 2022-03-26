@@ -39,7 +39,8 @@
         <?php
           if(isset($_POST["save_bio"])){
             $_SESSION["biografia"] = $_POST["biografia"];
-            $query = "UPDATE INTO Users (User_Biog) WHERE User_ID='".$_SESSION["email"]."' SET User_Biog='".$_SESSION["biografia"]."'";
+            $query = "UPDATE Users WHERE User_ID=".$_SESSION["email"]." SET User_Biog=".$_SESSION["biografia"];
+            //$query = "UPDATE INTO Users (User_Biog) WHERE User_ID='".$_SESSION["email"]."' SET User_Biog='".$_SESSION["biografia"]."'";
             //$insert = mysqli_query($db_conn, $query);
             if ($db_conn->query($query) === TRUE) {
               echo "Record updated successfully";
