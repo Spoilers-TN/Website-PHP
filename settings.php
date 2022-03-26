@@ -26,7 +26,7 @@
                         <form method="post" action="./test.php">
                         <label>Imposta la tua biografia.</label>
                         <div class="form-group">
-                            <input type="text" class="form-control" rows="3" id="bio"
+                            <input type="text" class="form-control" rows="3" id="biografia"
                               name="biografia" placeholder=<?php $user_biog ?> required> 
 <?php $query = "INSERT INTO users (user_biog) ". "VALUES('$biografia')";
                     $insert = mysqli_query($db_conn, $query);?></br>
