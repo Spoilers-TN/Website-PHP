@@ -26,7 +26,7 @@
                         </div>
 
                         <br>
-                        <form method="post" action=$_SERVER['PHP_SELF']>
+                        <form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
                         <label>Imposta la tua biografia.</label>
                         <div class="form-group">
                           <input type="text" class="form-control" rows="3" id="biografia" name="biografia"
@@ -34,7 +34,7 @@
                           <button type="submit" name="biografia">
                             Salva
                           </button>
-<?php $query = "INSERT INTO users (User_Biog)"."VALUES('$_POST["biografia"]')";
+<?php $query = "INSERT INTO users (User_Biog)"."VALUES('$_POST[\"biografia\"]')";
 
                     $insert = mysqli_query($db_conn, $query);?></br>
                         </div>
