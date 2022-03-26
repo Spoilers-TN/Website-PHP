@@ -31,7 +31,7 @@ session_start();
 ?>
 
 <html>
-  <p>Clicca qui per modificare il <a href="./Public/settings.php"/>profilo</a></p>
-  <p>clicca qui per tornare alla <a href="./Public/index.php" />home</a></p>
+  <p>Clicca qui per modificare il <a href="./settings.php"/>profilo</a></p>
+  <p>clicca qui per tornare alla <a href="./index.php" />home</a></p>
 </html>
  
